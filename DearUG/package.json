@@ -1,0 +1,9 @@
+{
+  "name": "dear-ug",
+  "version": "0.0.0",
+  "description": "DearUG",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  }
+}
