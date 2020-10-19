@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+
+
+    <pre>Click the button to change the src attribute in the iframe.
+    </pre>
+    <iframe id="myframe" src="" style="height:100%;width:35%;position:absolute;top:0px;bottom:50px;left:980px;"></iframe>
+    <button onclick="changeA()">Tag A</button>
+    <button onclick="changeB()">Tag B</button>
+    <button onclick="changeC()">Tag C</button>
+
+    <script>
+      function changeA() {
+        document.getElementById("myframe").src = "Atag.txt";
+      }
+      function changeB() {
+        document.getElementById("myframe").src = "Btag.txt";
+      }
+      function changeC() {
+        document.getElementById("myframe").src = "Ctag.txt";
+      }
+
+    </script>
+
+  </body>
+</html>

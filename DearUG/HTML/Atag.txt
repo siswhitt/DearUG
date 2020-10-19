@@ -1,0 +1,6 @@
+This will change the displayed post to be all those with
+Tag A
+
+A
+A
+A
