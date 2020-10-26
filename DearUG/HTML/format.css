@@ -1,6 +1,7 @@
 a:link, a:visited {
   color: black;
   padding: 5px 10px;
+  font-size: 15px;
   border-style: groove;
   border-left-color: lightblue;
   border-right-color: blue;
@@ -14,21 +15,29 @@ a:hover, a:active {
   background-color: gold;
 }
 
-/*h2 {
-  text-align: right;
-  padding: 5px 10px;
-  size: 10px;
-} */
-
-/*h1 {
+h2 {
+  /* text-align: right;
+  padding: 5px 10px; */
+  height: 35px;
+  width: 100%;
+  background-color: black;
   text-align: center;
 }
 
-p {
+h1 {
+  background-color: turquoise;
+}
+
+/*p {
   text-align: center;
 } */
 
 body {
-  /*background-color: yellow;*/
+  margin: 0;
+  background-color: turquoise;
   color: black;
+}
+
+iframe {
+  background-color: #E69567;
 }
