@@ -26,6 +26,7 @@ h2 {
 
 h1 {
   background-color: turquoise;
+  text-align: center;
 }
 
 /*p {
@@ -40,4 +41,11 @@ body {
 
 iframe {
   background-color: #E69567;
+}
+
+form {
+  float:center;
+  display:inline-block;
+  line-height:25px;
+  padding-right:7px;
 }
