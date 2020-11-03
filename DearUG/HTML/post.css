@@ -16,8 +16,6 @@ a:hover, a:active {
 }
 
 h2 {
-  /* text-align: right;
-  padding: 5px 10px; */
   height: 35px;
   width: 100%;
   background-color: black;
@@ -25,18 +23,15 @@ h2 {
 }
 
 h1 {
-  background-color: turquoise;
+  background-color: #E69567;
   text-align: center;
 }
 
-body {
-  margin: 0;
-  background-color: turquoise;
-  color: black;
-}
 
-iframe {
+body {
+  margin: 5px;
   background-color: #E69567;
+  color: black;
 }
 
 form {
