@@ -1,22 +1,4 @@
-<!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="format.css">
-  <body>
-
-    <h1>Search</h1>
-    <h2>
-      <a href="Main.html">Home</a>
-      <a href="Tags.html">Tags</a>
-      <form action="Search.html">
-        <input type="text" id="fname" name="fname" placeholder="Search">
-        <input type="submit" value="Submit">
-      </form>
-      <a href="Login.html">Login</a>
-    </h2>
-
-    <iframe id="myframe" src="post.html" style="height:100%;width:35%;position:absolute;top:150px;bottom:0px;left:500px;"></iframe>
-	
-	<html>
    <head>
    <script type = "text/javascript">
    function active() {
@@ -37,6 +19,7 @@
    
    </head>
    <body>   
+   
    <form action = "" method = "" id = "searchForm"/>
    <input type = "text" name = "in" id = "searchBox" placeholder = "" value = "Search..." maxlength = "25" autocomplete = "off" onMouseEnter = "active()">
    </form>
@@ -69,5 +52,5 @@
 
 ?>
 
-  </body>
+   </body>
 </html>
