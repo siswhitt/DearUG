@@ -6,68 +6,21 @@
     <h1>Search</h1>
     <h2>
       <a href="Main.html">Home</a>
+      <a href="createPost.html">New</a>
       <a href="Tags.html">Tags</a>
       <form action="Search.html">
         <input type="text" id="fname" name="fname" placeholder="Search">
         <input type="submit" value="Submit">
       </form>
       <a href="Login.html">Login</a>
+      <a href="register.php">Register</a>
     </h2>
 
     <iframe id="myframe" src="post.html" style="height:100%;width:35%;position:absolute;top:150px;bottom:0px;left:500px;"></iframe>
-	
-	<html>
-   <head>
-   <script type = "text/javascript">
-   function active() {
-	   var search_bar = document.getElementById("searchBox");
-	   if(search_bar.value == 'Search...') {
-		   search_bar.value = ''
-		   search_bar.placeholder = "Search..."
-	   }
-   }
-   
-  function inactive() {
-	   var search_bar = document.getElementById("searchBox");
-	   if(search_bar.value == 'Search...') {
-		   search_bar.value = ''
-		   search_bar.placeholder = "Search..."
-	   }
-   }
-   
-   </head>
-   <body>   
-   <form action = "" method = "" id = "searchForm"/>
-   <input type = "text" name = "in" id = "searchBox" placeholder = "" value = "Search..." maxlength = "25" autocomplete = "off" onMouseEnter = "active()">
-   </form>
-   	
-<?php
-        $dbhost = 'mysql:host=classdb.it.mtu.edu;port=3307;dbname=fisforsuccess';
-        $dbuser = 'fisforsuccess_rw';
-        $dbpass = 'success123';
-        try {
-			$dbconnect = new PDO($dbhost, $dbuser, $dbpass);
-			echo 'Connected successfully';
-			$query = mysql_query("select t.tagName, p.description, p.name, u.usernam
-			from tags t inner join post p inner join user u
-			where p.description like '%$in%'
-			or t.tagName like '%$in%'
-			or u.username like '%$in%'");
+    <script>
+    document.write(Date());
+    </script>
 
-			$num_rows = mysql_num_rows($query);
-			while($row = mysql_fetch_array($query)) {
-                $PostID = $row['PostID'];
-                $TagID = $row['TagID'];
-                $TagName = $row['TagName'];
-                echo $PostID . $TagID . $TagName . '<br/>';
-                }
-        }
-        catch(PDOException $error){
-			die("ERROR: " . $error . "<br/>");
-        }
-			
-
-?>
 
   </body>
 </html>
